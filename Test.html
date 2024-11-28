@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Custom URL Scheme</title>
+</head>
+<body>
+    <button id="testButton">Click me to launch app</button>
+
+    <script>
+        document.getElementById('testButton').addEventListener('click', function() {
+            // This triggers the custom URL scheme
+            window.location.href = 'mauiapp://navigate-to-page';
+        });
+    </script>
+</body>
+</html>
